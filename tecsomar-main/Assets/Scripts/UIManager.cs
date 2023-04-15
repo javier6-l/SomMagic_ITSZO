@@ -127,8 +127,8 @@ public class UIManager : MonoBehaviour
         GameManager.instance.OnRAPrecidenciaMunicipal += ActivateRAPrecidenciaMunicipal;
         GameManager.instance.OnRAConjuntoArquitectonicoDeSanFrancisco += ActivateRAConjuntoArquitectonicoDeSanFrancisco;
         GameManager.instance.OnRAPlazuelaBelenMata += ActivateRAPlazuelaBelenMata;
-        GameManager.instance.OnRAConjuntoArquitectonicoDeLaSoledad += ActivateAConjuntoArquitectonicoDeLaSoledad;
-        GameManager.instance.OnRACasaDeCultura += ActivateCasaDeCultura;
+        GameManager.instance.OnRAConjuntoArquitectonicoDeLaSoledad += ActivateRAConjuntoArquitectonicoDeLaSoledad;
+        GameManager.instance.OnRACasaDeCultura += ActivateRACasaDeCultura;
 
         //Ui de scrolls
         GameManager.instance.OnRegresarLeyendas += ActivateLeyendasMenu;
@@ -331,13 +331,24 @@ public class UIManager : MonoBehaviour
 
     //Ui de la Realidad Aumentada
     //Función de Scrolls SubTurismo CategoriasEdificios
-    private void ActivateCasaDeCultura()
+    private void ActivateRACasaDeCultura()
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(turismoMenuCanvas, false);
         ActivarDesactivarMenu(STCategoriasEdificios, false);
         ActivarDesactivarMenu(STCECasaCultura, false);
         ActivarDesactivarMenu(RACasaDeCultura, true);
+        
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAMuseoMunicipal()
     {
@@ -346,6 +357,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasEdificios, false);
         ActivarDesactivarMenu(STCEMuseo, false);
         ActivarDesactivarMenu(RAMuseoMunicipalCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAPrecidenciaMunicipal()
     {
@@ -354,6 +376,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasEdificios, false);
         ActivarDesactivarMenu(STCEPresidencia, false);
         ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAHotelHidalgo()
     {
@@ -362,6 +395,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasEdificios, false);
         ActivarDesactivarMenu(STCEHotelHidalgo, false);
         ActivarDesactivarMenu(RAHotelHidalgoCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAPlazuelaBelenMata()
     {
@@ -370,6 +414,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasEdificios, false);
         ActivarDesactivarMenu(STCEPlazuelaBelemMata, false);
         ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
 
     //Función de Scrolls SubTurismo CategoriasIglesias
@@ -380,6 +435,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasIglesias, false);
         ActivarDesactivarMenu(STCISantoDomingo, false);
         ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAParroquiaDeSanJuanButista()
     {
@@ -388,14 +454,36 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasIglesias, false);
         ActivarDesactivarMenu(STCISanJuanBautista, false);
         ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
-    private void ActivateAConjuntoArquitectonicoDeLaSoledad()
+    private void ActivateRAConjuntoArquitectonicoDeLaSoledad()
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(turismoMenuCanvas, false);
         ActivarDesactivarMenu(STCategoriasIglesias, false);
         ActivarDesactivarMenu(STCISoledad, false);
         ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAConjuntoArquitectonicoDeSanFrancisco()
     {
@@ -404,6 +492,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasIglesias, false);
         ActivarDesactivarMenu(STCISanFrancisco, false);
         ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
 
     //Función de Scrolls SubTurismo CategoriasJardines
@@ -414,6 +513,17 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasJardines, false);
         ActivarDesactivarMenu(STCJJardinZaragoza, false);
         ActivarDesactivarMenu(RAJardinZaragozaCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinConstitucionCanvas, false);
     }
     private void ActivateRAJardinConstitucion()
     {
@@ -422,24 +532,41 @@ public class UIManager : MonoBehaviour
         ActivarDesactivarMenu(STCategoriasJardines, false);
         ActivarDesactivarMenu(STCJJardinConstitucion, false);
         ActivarDesactivarMenu(RAJardinConstitucionCanvas, true);
+
+        ActivarDesactivarMenu(RACasaDeCultura, false);
+        ActivarDesactivarMenu(RAMuseoMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAPrecidenciaMunicipalCanvas, false);
+        ActivarDesactivarMenu(RAHotelHidalgoCanvas, false);
+        ActivarDesactivarMenu(RAPlazuelaBelenMataCanvas, false);
+        ActivarDesactivarMenu(RATemploDeSantoDomingoCanvas, false);
+        ActivarDesactivarMenu(RAParroquiaDeSanJuanButistaCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeLaSoledadCanvas, false);
+        ActivarDesactivarMenu(RAConjuntoArquitectonicoDeSanFranciscoCanvas, false);
+        ActivarDesactivarMenu(RAJardinZaragozaCanvas, false);
     }
 
     //Metodos del scroll
     private void ActivateFantasmaPuente()
     {
+
         ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, false);
         ActivarDesactivarMenu(FantasmaPuente, true);
     }
-
+    
     private void ActivateCerroSombreretillo()
     {
+
         ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, false);
         ActivarDesactivarMenu(CerroSombreretillo, true);
     }
 
     private void ActivateCatrinaItinerante()
     {
+
         ActivarDesactivarMenu(mainMenuCanvas, false);
+        ActivarDesactivarMenu(leyendasMenuCanvas, false);
         ActivarDesactivarMenu(CatrinaItinerante, true);
     }
 
@@ -459,6 +586,13 @@ public class UIManager : MonoBehaviour
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(turismoMenuCanvas, false);
+        ActivarDesactivarMenu(STCategoriasIglesias, false);
+        ActivarDesactivarMenu(STCategoriasJardines, false);
+        ActivarDesactivarMenu(STCECasaCultura, false);
+        ActivarDesactivarMenu(STCEMuseo, false);
+        ActivarDesactivarMenu(STCEHotelHidalgo, false);
+        ActivarDesactivarMenu(STCEPresidencia, false);
+        ActivarDesactivarMenu(STCEPlazuelaBelemMata, false);
         ActivarDesactivarMenu(STCategoriasEdificios, true);
 
     }
@@ -466,6 +600,12 @@ public class UIManager : MonoBehaviour
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(turismoMenuCanvas, false);
+        ActivarDesactivarMenu(STCategoriasJardines, false);
+        ActivarDesactivarMenu(STCategoriasEdificios, false);
+        ActivarDesactivarMenu(STCISantoDomingo, false);
+        ActivarDesactivarMenu(STCISanJuanBautista, false);
+        ActivarDesactivarMenu(STCISoledad, false);
+        ActivarDesactivarMenu(STCISanFrancisco, false);
         ActivarDesactivarMenu(STCategoriasIglesias, true);
 
     }
@@ -473,6 +613,10 @@ public class UIManager : MonoBehaviour
     {
         ActivarDesactivarMenu(mainMenuCanvas, false);
         ActivarDesactivarMenu(turismoMenuCanvas, false);
+        ActivarDesactivarMenu(STCategoriasEdificios, false);
+        ActivarDesactivarMenu(STCategoriasIglesias, false);
+        ActivarDesactivarMenu(STCJJardinConstitucion, false);
+        ActivarDesactivarMenu(STCJJardinZaragoza, false);
         ActivarDesactivarMenu(STCategoriasJardines, true);
 
 
@@ -601,6 +745,9 @@ public class UIManager : MonoBehaviour
 
         Debug.Log(menu.name + "-" + menu.transform.childCount + "-" + activarDesactivar.ToString());
     }
-
+    public void OpenLink(string link)
+    {
+        Application.OpenURL(link);
+    }
 
 }
