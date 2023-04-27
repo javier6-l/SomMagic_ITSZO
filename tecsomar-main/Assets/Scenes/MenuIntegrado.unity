@@ -43511,8 +43511,8 @@ MonoBehaviour:
     s/n, Col. Centro, Sombrerete, Zac., C.P. 99100\r\nTel\xE9fono: (433) 935 6114\r\nCorreo
     Electr\xF3nico: proteccion.civil@sombrerete.gob.mx\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c527525bf691fdc4a9d50963c9f283d3, type: 2}
+  m_sharedMaterial: {fileID: -5656042740571782774, guid: c527525bf691fdc4a9d50963c9f283d3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
